@@ -31,7 +31,7 @@ request(url, (error, response, body)=> {
     comicImg = comicResponse.img;
     origComicTitle = comicResponse.title;
     origComicYear = comicResponse.year;
-    console.log(comicImg);
+   // console.log(comicImg);
 });
 /*
 //get random comic
@@ -47,7 +47,7 @@ request(newURL, (error, response, body)=> {
 */
 //var comicImg = '';
 
-app.get('/', function(req, res){
+app.get('/comic', function(req, res){
     //res.send(comicImg);
     res.render("original-comic", {randomComicSite:randomComicSite ,originalComicSite:originalComicSite, pageTitle:pageTitle, ranComicResponse:ranComicResponse, comicImg:comicImg, ranComicImg:ranComicImg, newURL:newURL, origComicTitle:origComicTitle, origComicYear:origComicYear});
 
