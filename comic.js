@@ -49,7 +49,7 @@ request(newURL, (error, response, body)=> {
 
 app.get('/', function(req, res){
     //res.send(comicImg);
-    res.render("index", {randomComicSite:randomComicSite ,originalComicSite:originalComicSite, pageTitle:pageTitle, ranComicResponse:ranComicResponse, comicImg:comicImg, ranComicImg:ranComicImg, newURL:newURL, origComicTitle:origComicTitle, origComicYear:origComicYear});
+    res.render("original-comic", {randomComicSite:randomComicSite ,originalComicSite:originalComicSite, pageTitle:pageTitle, ranComicResponse:ranComicResponse, comicImg:comicImg, ranComicImg:ranComicImg, newURL:newURL, origComicTitle:origComicTitle, origComicYear:origComicYear});
 
 });
 /*
